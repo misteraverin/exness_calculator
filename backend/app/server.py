@@ -11,10 +11,10 @@ templates = Jinja2Templates(directory="templates/")
 
 @app.post("/calculate/")
 async def calculate_total_order_price(
-        request: Request,
-        product_quantity: int = Form(...),
-        price: str = Form(...),
-        state_code: str = Form(...),
+    request: Request,
+    product_quantity: int = Form(...),
+    price: str = Form(...),
+    state_code: str = Form(...),
 ):
     errors = []
     if product_quantity <= 0:

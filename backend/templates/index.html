@@ -23,12 +23,12 @@
         <p>Errors:</p>
         <ul>
             {% for value in errors %}
-                <li style="font-weight: bolder; font-style: italic; color: red">{{ value }}</li>
+                <li class="error" style="font-weight: bolder; font-style: italic; color: red">{{ value }}</li>
             {% endfor %}
         </ul>
     {% endif %}
     {% if total_order_price %}
-        <h3>Total order price:  {{ total_order_price }}</h3>
+        <h3 id="total_order_price">Total order price: {{ total_order_price }}</h3>
     {% endif %}
     <footer>
       Created by <a href="https://github.com/misteraverin">Maxim Averin</a>
