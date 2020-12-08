@@ -14,3 +14,6 @@ Application was built on:
 * FastAPI for backend, jinja2 templates for frontend and sakura.css for beautiful view
 * Docker and docker-compose for containers
 * black and flake8 as code formatters and linters
+* pytest for tests
+
+P.S I didn't add csrf token for form cause of lack of time
